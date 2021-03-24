@@ -4,6 +4,8 @@ name: workflow_dispatch -01
 
 on: 
   workflow_dispatch:
+    branch: 
+    - master
     inputs:
       logLevel:
         description: 'Log level'     
