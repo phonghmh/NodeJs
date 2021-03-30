@@ -1,0 +1,22 @@
+
+name: test workflow_dispatch
+
+on: 
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'mu name'     
+        required: true
+        default: 'hoai phong'
+      age:
+        description: 'age'
+        required: true
+        default: '21'
+
+jobs:
+  printInputs:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "Log level: ${{ github.event.inputs.name }}"
+        echo "Tags: ${{ github.event.inputs.age }}" 
