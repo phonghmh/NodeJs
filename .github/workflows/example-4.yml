@@ -1,5 +1,5 @@
 
-name: workflow_dispatch -01
+name: test workflow_dispatch
 
 on: 
   workflow_dispatch:
