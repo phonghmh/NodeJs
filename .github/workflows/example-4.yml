@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       name:
-        description: 'mu name'     
+        description: 'my name'     
         required: true
         default: 'hoai phong'
       age:
