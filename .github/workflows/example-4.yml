@@ -3,6 +3,8 @@ name: test workflow_dispatch
 
 on: 
   workflow_dispatch:
+    branches:
+      - TO-01
     inputs:
       name:
         description: 'my name'     
