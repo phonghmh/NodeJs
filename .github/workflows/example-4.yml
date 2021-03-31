@@ -1,19 +1,19 @@
 
-name: test workflow_dispatch
+name: test TO
 
 on: 
   workflow_dispatch:
     branches:
-      - TO-01
+      - TO-02
     inputs:
       name:
         description: 'my name'     
         required: true
-        default: 'hoai phong'
+        default: 'hoai dhaldk'
       age:
         description: 'age'
         required: true
-        default: '21'
+        default: '22'
 
 jobs:
   printInputs:
