@@ -20,5 +20,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
+        echo "Hoang Minh Hoai Phong"
         echo "Log level: ${{ github.event.inputs.name }}"
         echo "Tags: ${{ github.event.inputs.age }}" 
