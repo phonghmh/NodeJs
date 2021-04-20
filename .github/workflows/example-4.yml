@@ -3,21 +3,18 @@ name: test TO
 
 on: 
   workflow_dispatch:
-    branches:
-      - TO-02
     inputs:
       name:
         description: 'my name'     
-        required: true
-        default: 'hoai dhaldk'
+        required: false
       age:
         description: 'age'
-        required: true
-        default: '22'
+        required: false
 
 jobs:
   printInputs:
     runs-on: ubuntu-latest
+    if: (${{ github.event.inputs.name }} && ${{ github.event.inputs.age }})
     steps:
     - run: |
         echo "Log level: ${{ github.event.inputs.name }}"
