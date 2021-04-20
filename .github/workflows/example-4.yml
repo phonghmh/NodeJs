@@ -14,7 +14,7 @@ on:
 jobs:
   printInputs:
     runs-on: ubuntu-latest
-    if: (${{ github.event.inputs.name}} != '' && ${{ github.event.inputs.age }} != '')
+    if: (${{ github.event.inputs.name}} != 0 && ${{ github.event.inputs.age }} != 0)
     steps:
     - run: |
         echo "Log level: ${{ github.event.inputs.name }}"
